@@ -1,0 +1,38 @@
+// 
+// _card.scss
+// 
+.card-rounded {
+    border-radius: $border-radius-xl;
+}
+
+@media (max-width: 768px) {
+    .card-rounded {
+        border-radius: $border-radius;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-rounded {
+        border-radius: $border-radius-sm;
+    }
+}
+
+.card {
+    margin-bottom: $grid-gutter-width;
+    box-shadow: $box-shadow;
+}
+
+.card-drop {
+    color: $body-color;
+}
+
+.card-title {
+    font-size: 15px;
+    margin: 0 0 7px 0;
+    font-weight: $font-weight-semibold;
+}
+
+.card-title-desc {
+    color: $card-title-desc;
+    margin-bottom: 24px;
+}

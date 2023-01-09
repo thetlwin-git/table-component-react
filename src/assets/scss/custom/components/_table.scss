@@ -1,0 +1,113 @@
+// 
+// _table.scss
+// 
+
+.table {
+    margin-bottom: 0;
+
+    & tr:last-child>* {
+        border-bottom-width: 0px;
+    }
+
+    tbody {
+        
+        button {
+            border: 0;
+            border-radius: none;
+            font-family: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+            padding: 0.5em;
+            // margin-bottom: 1px;
+            background-color: transparent;
+        }
+    }
+
+    thead {
+        background-color: $table-head-color;
+
+        th {
+            border-bottom-width: 0px;
+        }
+
+        button {
+            border: 0;
+            border-radius: none;
+            font-family: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+            padding: 0.5em;
+            // margin-bottom: 1px;
+            background-color: transparent;
+        }
+
+        button::after {
+            margin-left: .6rem;
+            background-image: url('../../../images/table/sorting_netural.svg');
+            background-size: 0.625rem 1.35rem;
+            display: inline-block;
+            width: 0.625rem;
+            height: 1.35rem;
+            vertical-align: top;
+            content: "";
+        }
+
+        button.ascending::after {
+            margin-left: .6rem;
+            background-image: url('../../../images/table/sorting_down.svg');
+            background-size: 0.625rem 1.35rem;
+            display: inline-block;
+            width: 0.625rem;
+            height: 1.35rem;
+            vertical-align: top;
+            content: "";
+        }
+
+        button.descending::after {
+            margin-left: .6rem;
+            background-image: url('../../../images/table/sorting_up.svg');
+            background-size: 0.625rem 1.35rem;
+            display: inline-block;
+            width: 0.625rem;
+            height: 1.35rem;
+            vertical-align: top;
+            content: "";
+        }
+    }
+
+    tbody tr {
+        &.selected {
+            background-color: #EFEDFD !important;
+        }
+    }
+
+    th {
+        font-weight: $font-weight-bold;
+        padding: $table-head-padding-x 0 $table-head-padding-y $table-head-padding-y;
+    }
+
+    td {
+        padding: $table-head-padding-x 0 $table-head-padding-y $table-head-padding-y;
+    }
+}
+
+.table-dark>:not(:last-child)>:last-child>* {
+    border-bottom-color: $table-dark-border-color;
+}
+
+
+.table-bordered {
+    border: $table-border-width solid $table-border-color;
+}
+
+.table-nowrap {
+
+    th,
+    td {
+        white-space: nowrap;
+    }
+}
+
+.table>:not(:first-child) {
+    border-top: 0;
+}

@@ -1,0 +1,53 @@
+input[type="checkbox"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.checkbox {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-image: url("../../assets/images/table/checkbox-large.svg");
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.checkbox--active {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-image: url("../../assets/images/table/checkbox-checked-large.svg");
+    background-size: contain;
+}
+
+input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.radio {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-image: url("../../assets/images/table/radio-large.svg");
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.radio--active {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-image: url("../../assets/images/table/radio-checked-large.svg");
+    background-size: contain;
+}

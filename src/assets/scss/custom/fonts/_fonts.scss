@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Avenir Heavy";
+    src: url("../../../fonts/avenir-heavy/avenir-heavy.eot");
+    src: url("../../../fonts/avenir-heavy/avenir-heavy.eot?#iefix") format("embedded-opentype"),
+        url("../../../fonts/avenir-heavy/avenir-heavy.woff2") format("woff2"),
+        url("../../../fonts/avenir-heavy/avenir-heavy.woff") format("woff"),
+        url("../../../fonts/avenir-heavy/avenir-heavy.ttf") format("truetype"),
+        url("../../../fonts/avenir-heavy/avenir-heavy.svg#Avenir Heavy") format("svg");
+}
+
+.avenir-h {
+    font-family: "Avenir Heavy" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: $font-size-lg;
+}
+
+@font-face {
+    font-family: "Avenir Book Oblique";
+    src: url("../../../fonts/avenir-book-oblique/avenir-book-oblique.eot");
+    src: url("../../../fonts/avenir-book-oblique/avenir-book-oblique.eot?#iefix") format("embedded-opentype"),
+        url("../../../fonts/avenir-book-oblique/avenir-book-oblique.woff2") format("woff2"),
+        url("../../../fonts/avenir-book-oblique/avenir-book-oblique.woff") format("woff"),
+        url("../../../fonts/avenir-book-oblique/avenir-book-oblique.ttf") format("truetype"),
+        url("../../../fonts/avenir-book-oblique/avenir-book-oblique.svg#Avenir Book Oblique") format("svg");
+}
+
+.avenir-b-o {
+    font-family: "Avenir Book Oblique" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: $font-size-lg;
+}
+
+@font-face {
+    font-family: "Avenir Book";
+    src: url("../../../fonts/avenir-book/avenir-book.eot");
+    src: url("../../../fonts/avenir-book/avenir-book.eot?#iefix") format("embedded-opentype"),
+        url("../../../fonts/avenir-book/avenir-book.woff2") format("woff2"),
+        url("../../../fonts/avenir-book/avenir-book.woff") format("woff"),
+        url("../../../fonts/avenir-book/avenir-book.ttf") format("truetype"),
+        url("../../../fonts/avenir-book/avenir-book.svg#Avenir Book") format("svg");
+}
+
+.avenir-b {
+    font-family: "Avenir Book" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: $font-size-lg;
+}
+
+@media (max-width: 768px) {
+    .avenir-h, .avenir-b-o, .avenir-b {
+        font-size: $font-size-sm;
+    }
+}
+
+@media (max-width: 320px) {
+    .avenir-h, .avenir-b-o, .avenir-b {
+        font-size: $font-size-xs;
+    }
+}

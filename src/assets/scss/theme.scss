@@ -1,0 +1,97 @@
+// Light Theme
+@import "./bootstrap.scss";
+@import "./app.scss";
+
+body {
+    padding: 20px;
+    // background-color: transparent;
+
+    * {
+        outline: none;
+    }
+}
+
+// React Table next css
+.react-bootstrap-table-page-btns-ul {
+    float: right !important;
+}
+
+.search-label {
+    float: right;
+}
+
+.react-drawer-overlay {
+    z-index: 9999;
+}
+
+// datatable
+
+.react-bs-table-sizePerPage-dropdown {
+    .dropdown-menu {
+        .dropdown-item {
+            a {
+                display: block;
+            }
+        }
+    }
+}
+
+.rightbar-title .right-bar-toggle {
+    background-color: #444c54 !important;
+    height: 24px !important;
+    width: 24px !important;
+    line-height: 24px !important;
+    display: block !important;
+    color: #eff2f7 !important;
+    text-align: center !important;
+    border-radius: 50% !important;
+}
+
+//rightbar drawer
+.css-sourceMap-modules-importLoaders-1-localIdentName-animate__animated___2O131 {
+    animation-duration: 0.6s !important;
+}
+
+.css-sourceMap-modules-importLoaders-1-localIdentName-ReactDrawer__overlay___2QFmC-sass {
+    background: rgba(0, 0, 0, 0.15) !important;
+}
+
+//react-table
+.custom-header-css {
+    thead {
+        tr {
+            th {
+                div:last-child {
+                    min-height: 38px;
+                }
+            }
+        }
+
+        td:nth-last-child(2) {
+            width: 150px !important;
+        }
+    }
+}
+
+.editor_email .ck-content {
+    height: 200px;
+}
+
+.jobs-categories .card-body a:last-child {
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 991.98px) {
+    .search-box {
+        display: block !important;
+
+        .search-label {
+            float: none;
+            width: 100%;
+
+            .form-control {
+                border-radius: 0.25rem !important;
+            }
+        }
+    }
+}
